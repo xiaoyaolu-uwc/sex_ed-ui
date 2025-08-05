@@ -6,10 +6,8 @@ def sexed_assistant(user_input):
     try:
         response = requests.post(N8N_WEBHOOK_URL, json={"user_question": user_input})
         response.raise_for_status()
-        print("RAW TEXT:", response.text)  # ← TEMP: See what you're actually getting
         
         data = response.json()
-        print("PARSED JSON:", data)  # ← TEMP: Confirm it's a list of dicts
         
         if not data or not isinstance(data, list) or "text" not in data[0]:
             return "Error: Malformed response from backend", None
