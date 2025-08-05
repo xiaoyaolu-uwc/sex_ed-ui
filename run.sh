@@ -29,3 +29,4 @@ wait $STREAMLIT_PID
 
 # 7. Kill ngrok when Streamlit finishes
 kill $NGROK_PID
+echo "Ngrok terminated."
