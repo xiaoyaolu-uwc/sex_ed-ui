@@ -23,4 +23,9 @@ echo "$NGROK_URL"
 echo
 
 # 6. Start Streamlit
-streamlit run app.py
+streamlit run app.py &
+STREAMLIT_PID=$!
+wait $STREAMLIT_PID
+
+# 7. Kill ngrok when Streamlit finishes
+kill $NGROK_PID
