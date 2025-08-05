@@ -1,6 +1,6 @@
 import requests
 
-N8N_WEBHOOK_URL = "http://localhost:5678/webhook-test/chat"  
+N8N_WEBHOOK_URL = "http://localhost:5678/webhook/chat"  
 
 def sexed_assistant(user_input):
     try:
