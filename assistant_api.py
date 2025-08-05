@@ -1,6 +1,6 @@
 import requests
 
-N8N_WEBHOOK_URL = "https://abc123.ngrok.io/webhook/chat"  # replace with yours
+N8N_WEBHOOK_URL = "http://localhost:5678/webhook-test/chat"  
 
 def sexed_assistant(user_input):
     try:

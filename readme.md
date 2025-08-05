@@ -14,5 +14,5 @@ This is a prototype chat interface for an AI-powered sex education assistant des
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/sexed-ui.git
+git clone https://github.com/xiaoyaolu-uwc/sexed-ui.git
 cd sexed-ui
